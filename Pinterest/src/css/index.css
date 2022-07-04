@@ -6,11 +6,11 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  background-color: rgb(124, 173, 219);
 }
 
 .conteiner {
   max-width: 1170px;
   padding: 15px;
   margin: auto;
+  background-color: rgb(124, 173, 219);
 }
