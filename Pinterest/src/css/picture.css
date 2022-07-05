@@ -98,8 +98,7 @@
 .picture-img:hover .picture-button-appeal {
     display: block;
 }
-.picture-img:hover .picture-pinterest {
-}
+
 .picture-user {
     display: flex;
     justify-content: space-between;

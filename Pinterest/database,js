@@ -1,0 +1,29 @@
+const datatb = [
+    {
+        name: "task1",
+        board1: "active",
+        board2: "active",
+        board3: "not_active",
+        search1: "cat",
+        search2: "wild",
+        search: "black",
+    },
+    {
+        name: "task1",
+        board1: "active",
+        board2: "active",
+        board3: "not_active",
+        search1: "cat",
+        search2: "wild",
+        search: "black",
+    },
+    {
+        name: "task1",
+        board1: "active",
+        board2: "active",
+        board3: "not_active",
+        search1: "cat",
+        search2: "wild",
+        search: "black",
+    },
+];
