@@ -72,33 +72,6 @@
     opacity: 1;
 }
 
-.picture-button-add {
-    display: none;
-    position: absolute;
-    top: 30%;
-    left: 8%;
-    background-color: bisque;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-}
-.picture-button-appeal {
-    display: none;
-    position: absolute;
-    top: 60%;
-    left: 18%;
-    background-color: bisque;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-}
-.picture-img:hover .picture-button-add {
-    display: block;
-}
-.picture-img:hover .picture-button-appeal {
-    display: block;
-}
-
 .picture-user {
     display: flex;
     justify-content: space-between;
