@@ -1,3 +1,5 @@
-let resp = await fetch("./usersdata.json");
-let dd = resp.json;
-console.log(dd);
+import { createLi } from "./users.js";
+
+import users_base from "./users.js";
+
+createLi(users_base);
