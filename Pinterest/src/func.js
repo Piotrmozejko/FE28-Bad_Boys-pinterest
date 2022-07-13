@@ -3,6 +3,13 @@ export { reset_board, createLi };
 function reset_board(element) {
     element.forEach((users_source) => {
         users_source.board = "Выбрать доску";
+
+        let wallArray = users_source.wallpaper.split("");
+        let arrLength = users_source.wallpaper.length;
+
+        let index = wallArray.lastIndexOf("/");
+        let cutArray = wallArray.slice(index + 1, arrLength);
+        users_source.search = "#" + cutArray.join("");
     });
 }
 
@@ -73,13 +80,13 @@ function createLi(users_source) {
         "append"
     );
 
-    // createPtext(
-    //     "user-text",
-    //     "user-text" + users_source.id,
-    //     users_source.name,
-    //     "#" + "picture-user" + users_source.id,
-    //     "append"
-    // );
+    createPtext(
+        "user-text",
+        "user-text" + users_source.id,
+        users_source.search,
+        "#" + "picture-user" + users_source.id,
+        "append"
+    );
 }
 
 function createElem(
