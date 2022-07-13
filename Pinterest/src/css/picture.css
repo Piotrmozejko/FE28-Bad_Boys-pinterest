@@ -50,6 +50,7 @@
     ); /* Настройка цвета и прозрачности для блока с заголовком при наведении */
 }
 .picture-pinterest {
+    /* width: 100%; */
     height: 100%;
     background-color: white;
 }
