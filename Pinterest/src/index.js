@@ -19,15 +19,10 @@ deskElement.addEventListener("input", () => {
 
 searchElement.addEventListener("input", () => {
     ulConteiner.innerHTML = "";
-    //alert(searchElement.value);
-    // console.log("---------");
-    // console.log(searchElement.value);
-    console.log(searchElement.placeholder);
+
     if (searchElement.value) {
-        console.log("/////////");
         createAllLi(users_base, searchElement.value);
     } else {
-        console.log("---------");
         createAllLi(users_base, deskElement.value);
     }
 });
