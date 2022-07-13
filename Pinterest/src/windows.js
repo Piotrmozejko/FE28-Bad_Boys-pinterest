@@ -34,6 +34,10 @@ let dialogElems = document.querySelectorAll('dialog');
          if (target.classList.value === 'report_btn_cancel') {
             reportWindow.close();
          }
+
+         if (target.classList.value === add_button_board) {
+            addWindow.close();
+         }
       });
    });
 }

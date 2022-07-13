@@ -1,11 +1,28 @@
-<<<<<<< HEAD
+import { createAllLi } from './users.js';
+import { reset_board } from './func.js';
+
+// import users_base from "./users.js";
 let resp = await fetch('./usersdata.json');
-let dd = resp.json;
-console.log(dd);
-=======
-import { createLi } from "./users.js";
+const users_base = await resp.json();
+reset_board(users_base);
 
-import users_base from "./users.js";
+createAllLi(users_base, 'Выбрать доску');
+let ulConteiner = document.querySelector('.picture-list');
+let deskElement = document.querySelector('.drop-list');
+let searchElement = document.querySelector('.search-header');
 
-createLi(users_base);
->>>>>>> f2f2d666ec673b1c3a9a900d685a7232d24dc6a6
+deskElement.addEventListener('input', () => {
+   ulConteiner.innerHTML = '';
+   alert(deskElement.value);
+   createAllLi(users_base, deskElement.value);
+});
+
+searchElement.addEventListener('input', () => {
+   ulConteiner.innerHTML = '';
+
+   if (searchElement.value) {
+      createAllLi(users_base, searchElement.value);
+   } else {
+      createAllLi(users_base, deskElement.value);
+   }
+});
