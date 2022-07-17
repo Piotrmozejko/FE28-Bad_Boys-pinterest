@@ -22,8 +22,6 @@ function createLi(users_source) {
         "append"
     );
 
-    //users_source.board = 0;
-
     createElem(
         "div",
         "picture-img",
