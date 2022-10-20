@@ -4,3 +4,4 @@
 участники: Никита Прошин,
 Виталий Предко
 проект: pinterest
+https://github.com/Piotrmozejko/FE28-Bad_Boys-pinterest.git
